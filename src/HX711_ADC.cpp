@@ -310,7 +310,7 @@ uint8_t HX711_ADC::conversion24bit()  //read 24 bit data, store in dataset and s
 	if ((data < 0x000000) || (data > 0xFFFFFF))
 	{
 		dataOutOfRange = 1;
-		Serial.println("dataOutOfRange");
+		//Serial.println("dataOutOfRange");
 	}
 	if (readIndex == samplesInUse + IGN_HIGH_SAMPLE + IGN_LOW_SAMPLE - 1) 
 	{
